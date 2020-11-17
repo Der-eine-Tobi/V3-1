@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*  CSS Document  */
+/*  This file was provided as part of a weekly web design tutorial series.
+	Sign-up for our newsletter, at http://codifydesign.com, to be notified
+	about each new episode of Creating Web Media
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f7fc;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.3em;
+  color: #3c3e14;
+}
+
+header {
+  margin: 0;
+  padding: 1px 0;
+  background: #4b8e9c url(images/banner.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+header h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 5em;
+  letter-spacing: 10px;
+  color: #fff;
+  font-weight: 400;
+  margin: 55px 0 30px 30px;
+  position: relative;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #000;
+}
+
+article {
+  margin: 20px 0 0 30px;
+}
+
+article > p {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin-right: 30px;
+}
+
+article::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2em;
+  margin: 0 0 8px 0;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+/* SASS Nesting - her starter min code */
+article aside {
+  /* elementerne bliver sat i float left og i bokse så de står pænt i række lige meget hvor bredt skærmen er pga % */
+  max-width: 33%;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 15px;
+  padding-right: 30px;
+}
+
+article aside h2 {
+  font-variant: small-caps;
+  /* text-transform: uppercase; <- can bruges i stedet for text-variant*/
+  letter-spacing: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 8px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+article aside p {
+  font-size: 0.9em;
+}
+
+article aside img {
+  /* billederne bliver sat til en responsiv fast højde og sat til at floate ved siden af teksten */
+  max-height: 4.4em;
+  float: left;
+  margin-top: 5px;
+  margin-right: 13px;
+}
+/*# sourceMappingURL=style.css.map */
